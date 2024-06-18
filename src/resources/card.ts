@@ -6,7 +6,7 @@ const createdAt = new Date();
 
 export const name = 'main';
 
-export const version = '1';
+export const version = '2';
 
 export const fixed = {
   cfg: { retext: true } as const,
@@ -234,7 +234,7 @@ export const card = {
                 items: [
                   {
                     type: 'Input.Number',
-                    label: 'Number of Lines (E911 calc)',
+                    label: 'Telephone Number Quantity',
                     id: 'line',
                     min: 0
                   }
