@@ -105,8 +105,9 @@ export class Bot {
       const { cfg, cmpn, addr, city, st, zip, ctry, qty, cust, date, chg, line, sale, serv, tran, ref, cmmt } =
         event?.data?.inputs ?? {};
       const format = event?.data?.inputs?.format;
+      const basis = serv === '21' && !isNaN(Number(line)) ? Math.ceil(Number(line) / 23).toString() : line;
       const bill = { addr, city, st, zip, ctry };
-      const itms = [{ qty, chg, line, sale, serv, tran, ref }];
+      const itms = [{ qty, chg, line: basis, sale, serv, tran, ref }];
       const inv = [{ bill, itms, cust, date }];
 
       return { cfg, cmpn, inv, cmmt, format };
