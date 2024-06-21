@@ -1,14 +1,15 @@
+import Ajv from 'ajv';
+import bot from './services/bot';
+import AutoLoad from '@fastify/autoload';
+import addFormats from 'ajv-formats';
 import { join } from 'path';
-import AutoLoad, { type AutoloadPluginOptions } from '@fastify/autoload';
+import { API_BASE_URL as AVALARA_API_BASE_URL } from '$lib/constants/avalara';
+import { API_BASE_URL as WEBEX_API_BASE_URL, VALID_ACCESS_TOKEN } from '$lib/constants/webex';
+import type { SensibleOptions } from '@fastify/sensible';
 import type { FastifyInstance, FastifyPluginAsync, FastifyServerOptions } from 'fastify';
 import type { FastifyEnvOptions as EnvOptions } from '@fastify/env';
 import type { FastifyStaticOptions as StaticOptions } from '@fastify/static';
-import { API_BASE_URL as AVALARA_API_BASE_URL } from '$lib/constants/avalara';
-import { API_BASE_URL as WEBEX_API_BASE_URL, VALID_ACCESS_TOKEN } from '$lib/constants/webex';
-import addFormats from 'ajv-formats';
-import Ajv from 'ajv';
-import bot from './services/bot';
-import type { SensibleOptions } from '@fastify/sensible';
+import type { AutoloadPluginOptions } from '@fastify/autoload';
 
 export type AppOptions = {
   server?: FastifyServerOptions;
