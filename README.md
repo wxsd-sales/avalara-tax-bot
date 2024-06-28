@@ -5,9 +5,18 @@
 This application is designed to provide tax estimation capabilities by interfacing with the Avalara communications tax engine API. The bot leverages the Fastify web framework and the Webex SDK to send out Adaptive Cards and return results in various formats such as tabular, CSV, and JSON.
 
 <p align="center">
-  <img src="https://github.com/wxsd-sales/avalara-tax-bot/assets/6129517/460bfae3-3fbc-4237-b30b-ef5922aca337" alt="avalara-tax-bot-tabular"/>
-  <img src="https://github.com/wxsd-sales/avalara-tax-bot/assets/6129517/2800bbfb-0a19-44da-828f-bf066d2a8359" alt="avalara-tax-bot-csv"/>
-  <img src="https://github.com/wxsd-sales/avalara-tax-bot/assets/6129517/873afd3d-ad7d-4cb6-bc0f-e9d431d91edb" alt="avalara-tax-bot-json"/>
+  <table>
+  <tr>
+    <td rowspan="3"><img src="https://github.com/wxsd-sales/avalara-tax-bot/assets/6129517/9c6ef9ba-6837-4d22-aaf8-f8b3eea450dc" alt="avalara-tax-bot--main-card"/></td>
+    <td><img src="https://github.com/wxsd-sales/avalara-tax-bot/assets/6129517/460bfae3-3fbc-4237-b30b-ef5922aca337" alt="avalara-tax-bot-tabular"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/wxsd-sales/avalara-tax-bot/assets/6129517/2800bbfb-0a19-44da-828f-bf066d2a8359" alt="avalara-tax-bot-csv"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/wxsd-sales/avalara-tax-bot/assets/6129517/873afd3d-ad7d-4cb6-bc0f-e9d431d91edb" alt="avalara-tax-bot-json"/></td>
+  </tr>
+</table>
 </p>
 
 <!-- ⛔️ MD-MAGIC-EXAMPLE:START (TOC:collapse=true&collapseText=Click to expand) -->
